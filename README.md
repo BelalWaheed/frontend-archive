@@ -1,85 +1,66 @@
-# Frontend Development Archive & Learning Vault
+# Frontend Development Archive & Learning Monorepo
 
-A structured archive preserving foundational frontend development coursework, practical exercises, and mini-projects spanning HTML5, CSS3, JavaScript, React, Redux Toolkit, and Next.js.
+A centralized monorepo preserving foundational frontend engineering coursework, standalone mini-applications, responsive UI templates, and component architectures spanning HTML5, CSS3, JavaScript (ES6+), React 18, Redux Toolkit, and Next.js.
 
 ---
 
-## Repository Structure
+## Master Catalog & Project Index
+
+### 1. Standalone Web Applications (`apps/`)
+
+| Application | Core Tech Stack | Description | Location |
+| :--- | :--- | :--- | :--- |
+| **React Shopping Cart** | React 18, Redux Toolkit, React Router, Tailwind CSS | Full-scale e-commerce cart with inventory management, cart drawer, and tax calculation. | [`apps/react-shopping-cart/`](apps/react-shopping-cart/) |
+| **Weather Dashboard** | Vanilla JS, OpenWeatherMap API, TimeZoneDB, Unsplash | Real-time weather forecasts, barometric metrics, dynamic photography, and timezone mapping. | [`apps/weather-app/`](apps/weather-app/) |
+| **Currency Converter** | Vanilla JS, ExchangeRate-API, FlagsAPI, Bootstrap 5 | Real-time currency conversions, currency swap animations, and dynamic country flag icons. | [`apps/currency-converter/`](apps/currency-converter/) |
+| **Meme Generator** | Vanilla JS, Imgflip REST API, Bootstrap 5 | Dynamic REST API meme explorer with live index lookups and responsive canvas rendering. | [`apps/meme-generator/`](apps/meme-generator/) |
+
+---
+
+### 2. Multi-Page & Responsive Templates (`templates/`)
+
+| Template | Design System | Highlights | Location |
+| :--- | :--- | :--- | :--- |
+| **Chronos Luxury Watches** | Bootstrap 5, Custom Dark CSS | Modern product landing page with editorial photo galleries, interactive specs, and luxury palette. | [`templates/watches-luxury-landing/`](templates/watches-luxury-landing/) |
+| **FreshBite Organic Delivery** | Multi-Page HTML5, Bootstrap 5 | Complete multi-page site (`index.html`, `products.html`, `about.html`, `contact.html`) with order forms. | [`templates/static-online-food/`](templates/static-online-food/) |
+
+---
+
+### 3. Foundational Learning Curriculum
 
 ```
-front_end/
-├── html/                   # HTML5 fundamentals, semantic markup, and structure
-├── css/                    # Responsive design, Bootstrap grid, styling exercises
-├── js/                     # Core JavaScript (ES6+), DOM manipulation, utility apps
-├── react/                  # React component architecture, hooks, and lecture demos
-├── next/                   # Next.js pages and fundamentals
-├── toolkit/                # Redux Toolkit (RTK) global state management & Vite app
-├── projects/               # Integrated multi-technology practice builds
-└── .gitignore              # Universal ignore for dependencies and build artifacts
+frontend-archive/
+├── apps/                       # Standalone applications (React Cart, Weather, Currency, Meme)
+├── templates/                  # Full landing pages (Chronos Watches, FreshBite Food)
+├── html/                       # Semantic HTML5 fundamentals, forms, and validation
+├── css/                        # Responsive CSS3 layouts, Flexbox, Grid, and utility classes
+├── js/                         # Core ES6+ JavaScript, DOM APIs, and utility scripts
+├── react/                      # React component hierarchy, state hooks, and lecture builds
+├── next/                       # Next.js page routing and SSR introduction
+└── toolkit/                    # Redux Toolkit global state management starter
 ```
 
 ---
 
-## Module Breakdown
+## Setup & Running Locally
 
-### 1. HTML5 Fundamentals (`html/`)
-- **Semantic Structure**: Modern page layout structures and semantic tags.
-- **Form Controls & Inputs**: Form design, input validation, and media embedding.
-- **Practice Files**: Standalone HTML templates and experiment pages.
+### Static HTML / CSS / JS Projects
+Open any project's `index.html` directly in a browser or launch with **VS Code Live Server**.
 
-### 2. CSS & Responsive Design (`css/`)
-- **Layout Engines**: Flexbox, Grid, positioning, and box model mechanics.
-- **Framework Integration**: Bootstrap layout grids, utility classes, and components.
-- **Typography & Assets**: Web font loading, responsive image handling, and custom UI styling.
-
-### 3. JavaScript & DOM Engineering (`js/`)
-- **Core Concepts**: ES6+ syntax, scope, closures, array methods, and asynchronous logic.
-- **DOM Manipulation**: Event listeners, dynamic UI rendering, and state handling.
-- **Featured Mini-Apps**:
-  - `Calculator/`: Interactive arithmetic calculator.
-  - `Currency_Converter/`: Live currency conversion utility.
-  - `Timer/`: Interval-based stopwatch and timer.
-  - `facebook/`: Social interface clone exercises.
-
-### 4. React Fundamentals (`react/`)
-- **Component Architecture**: Functional components, props passing, and component composition.
-- **Hooks & State**: `useState`, `useEffect`, and synthetic event handling.
-- **Lecture Exercises**: Progressive lecture builds (`0-lecs/`, `1-back_again/`, `Projects/`).
-
-### 5. Redux Toolkit Architecture (`toolkit/`)
-- **Global State Management**: Redux store configuration and typed slice reducers.
-- **Modern Build Tooling**: Vite development server, Tailwind CSS integration, and PostCSS configuration.
-- **API Integration**: Asynchronous data fetching and store hydration.
-
-### 6. Next.js Exploration (`next/`)
-- **Server & Client Architecture**: Introduction to Next.js page structure and routing conventions (`lec-1/`).
-
-### 7. Integrated Builds (`projects/`)
-- **Cross-Stack Applications**: Comprehensive practice applications combining HTML, vanilla JavaScript, and React component libraries (`1-react-projects/`).
-
----
-
-## Setup & Running Projects
-
-### Standalone HTML / CSS / JS Projects
-Open any `.html` file directly in a modern web browser, or use a local development server such as VS Code Live Server.
-
-### React & Toolkit Projects
-To run the Vite / Redux Toolkit application:
-
+### React & Redux Toolkit Applications
 ```bash
-# Navigate to the toolkit directory
-cd toolkit
+# Navigate to the shopping cart app
+cd apps/react-shopping-cart
 
 # Install dependencies
 npm install
 
-# Start development server
+# Start local development server
 npm run dev
 ```
 
 ---
 
-## Purpose & Archival Status
+## Archival Status & Maintenance
 
-This repository is maintained as a historical reference and educational learning journey archive. Active development takes place in dedicated domain-specific repositories.
+This repository serves as a permanent educational archive and technical reference for foundational frontend milestones. Active production projects are developed in dedicated repositories.
