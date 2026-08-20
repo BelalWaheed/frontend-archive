@@ -1,0 +1,58 @@
+body {
+    background-color: #0b0f19;
+    color: #f8fafc;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.hero-img {
+    max-height: 480px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.4s ease;
+}
+
+.hero-img:hover {
+    transform: scale(1.02);
+}
+
+.product-card {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8 !important;
+}
+
+.product-card img {
+    height: 260px;
+    object-fit: cover;
+}
+
+.gallery-frame {
+    position: relative;
+    border: 1px solid #1e293b;
+    height: 280px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.gallery-frame:hover .gallery-img {
+    transform: scale(1.08);
+    filter: brightness(0.85);
+}
+
+.nav-link {
+    color: #94a3b8 !important;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #38bdf8 !important;
+}
