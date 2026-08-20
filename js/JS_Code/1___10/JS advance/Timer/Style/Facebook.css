@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #f0f2f5;
+
+  overflow: hidden;
+}
+.main {
+  font-family: sans-serif;
+  width: 100%;
+  gap: 1.5em;
+  padding: 4em 4em 0em 4em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .text {
+  width: 38%;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+}
+.main .text h1 {
+  color: #1877f2;
+  font-size: 3.9em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.main .text p {
+  line-height: 1.5em;
+  color: dimgray;
+  font-size: 1.7em;
+  width: 90%;
+}
+.main .log {
+  margin-top: 4em;
+  width: 420px;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 1.5em;
+  background-color: #fff;
+  display: flex;
+
+  flex-direction: column;
+}
+.main .log form {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+}
+.main .log form .inp {
+  border-radius: 6px;
+  border: 1px solid rosybrown;
+  font-size: 0.8em;
+  background: transparent;
+  color: #1877f2;
+  padding: 13px;
+}
+.main .log label {
+  color: blue;
+}
+.main .log form #log-buttum {
+  padding: 9px;
+  border: 1px solid white;
+  border-radius: 6px;
+  background-color: #1877f2;
+  color: white;
+}
+.main .log form #log-buttum:hover {
+  background-color: darkblue;
+}
+.main .log .log-bottom {
+  text-align: center;
+  display: flex;
+  gap: 1.5em;
+  flex-direction: column;
+}
+
+.main .log .log-bottom a {
+  margin-top: 2em;
+  color: #1877f2;
+}
+.main .log .log-bottom a:hover {
+  text-decoration: underline;
+}
+.main .log .log-bottom hr {
+  align-self: center;
+  width: 88%;
+}
+.main .log .log-bottom button {
+  align-self: center;
+  background-color: rgb(59, 181, 59);
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 1em 1.2em;
+  cursor: pointer;
+}
+.main .log .log-bottom button a {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+}
+.main .log .log-bottom button a:hover {
+  text-decoration: none;
+}
+.main .log .log-bottom button:hover {
+  background-color: green;
+}
+
+.main .bottom {
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 15px;
+  font-size: 14px;
+  color: darkcyan;
+}
+.main .bottom a:hover {
+  text-decoration: underline;
+}

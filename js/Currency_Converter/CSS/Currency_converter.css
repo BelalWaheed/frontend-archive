@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(135deg, #91b6d1 0%, #f8f9fa 100%);
+}
+.converter-card {
+    width: 700px;
+    max-width: 90%;
+}
+.card-header {
+    background: linear-gradient(135deg, #2a4d8e, #4a90e2);
+    color: white;
+    border-radius: 15px 15px 0 0 !important;
+    padding: 1.5rem;
+}
+.card-body {
+    background: white;
+}
+.swap {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 70%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.swap:hover {
+    background-color: #2a4d8e;
+    transform: rotate(180deg) scale(1);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+.result {
+    background: #f95959;
+    border-radius: 7px;
+    color: white;
+}
+.convertBtn {
+    background-color: #4a90e2 !important;
+
+    transition: all 0.1s ease-in;
+}
+.convertBtn:hover {
+    background-color: #2a4d8e !important;
+}

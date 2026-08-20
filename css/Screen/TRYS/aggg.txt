@@ -1,0 +1,9 @@
+1- Header	
+2-form
+ *div
+	margine &padding	
+ border to the inp
+display: block
+ 
+text area
+submit

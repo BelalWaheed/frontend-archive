@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sixtyfour Convergence", sans-serif;
+}
+li .nav-link {
+  transition: 0.4s;
+  color: #0892f4;
+  font-size: 1.2rem;
+}
+
+li .nav-link:hover {
+  color: black;
+}
+.main {
+  height: 100vh;
+}
+
+.main .left p {
+  width: 90%;
+  color: darkslategray;
+}
+
+.bola {
+  background-color: #0892f4;
+  border: 1px solid #0892f4;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.bola:hover {
+  transform: scale(1.2);
+}
+.NewPro {
+  width: 97%;
+}
+.bsc {
+  transition: 1s;
+}
+.bsc:hover {
+  transform: scale(1.1);
+}

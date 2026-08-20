@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahtches</title>
+    <link rel="stylesheet" href="/Style/bootstrap.min.css">
+    <link rel="stylesheet" href="/Style/all.min.css">
+    <link rel="stylesheet" href="/Style/bs-1.css">
+</head>
+
+<body>
+    <!-- Nav -->
+    <ul class="nav justify-content-center pt-3   ">
+        <li class="nav-item">
+            <a class="nav-link active fw-medium" aria-current="page" href="#Home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fw-medium" href="#Products">Products</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fw-medium" href="#New-Arrivals">New-Arrivals</a>
+        </li>
+        <!-- Nav -->
+    </ul>
+
+    <div class="main  row  flex-md-row flex-lg-row m-auto justify-content-center align-content-center " id="Home">
+        <div class="left  col-lg-5   col-md-6  col-sm-9 align-content-center  ">
+            <h1 class="fw-bold mb-4 d-flex justify-content-sm-center justify-content-md-start  ">Watch of Choice</h1>
+            <p class="lh-lg text-sm-center  text-md-start text-lg-start">Enim ad minim veniam, quis nostrud exercitation
+                ullamco
+                laboris nisi aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <div class=" bolaContinaer  d-flex justify-content-sm-center justify-content-md-start mb-3 w-100 ">
+                <button class=" bola  p-1 ">
+                    <a href="#Home" class="text-light text-decoration-none p-1 ">SHOW WAHTCHES</a>
+                </button>
+            </div>
+        </div>
+        <div class="img col-lg-5   col-md-6  col-sm-9 mt-sm-3 ">
+            <img src="/imgs/Wahtchs/choce_watch1.png" width="90%" alt="">
+        </div>
+    </div>
+    <!-- New Products -->
+    <div class="NewPro d-flex container-fluid flex-column  mx-auto w-100 " id="Products">
+        <h2 class="fw-bold  container">New Products</h2>
+        <div class="hold-of-div-imgs d-flex justify-content-evenly flex-wrap">
+            <div class="img-1">
+                <figure class="overflow-hidden">
+                    <img src="/imgs/Wahtchs/new_product1.png" class="bsc" alt="">
+                </figure>
+                <figcaption class="fs-3 text-center ">Skagen Watch!</figcaption>
+                <p class="text-danger text-center">$240.11</p>
+            </div>
+            <div class="img-2 overflow-hidden ">
+                <figure class="overflow-hidden">
+                    <img src="/imgs/Wahtchs/new_product2.png" class="bsc" alt="">
+                </figure>
+                <figcaption class="fs-3 text-center">Silver Watch!
+                </figcaption>
+                <p class="text-danger text-center">$780.11</p>
+            </div>
+            <div class="img-3 overflow-hidden ">
+                <figure class="overflow-hidden">
+                    <img src="/imgs/Wahtchs/new_product3.png" class="bsc" alt="">
+                </figure>
+                <figcaption class="fs-3 text-center">Golden Watch!</figcaption>
+                <p class="text-danger text-center">$2400.11</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Products -->
+
+    <!-- New Arrivals -->
+
+    <div class="NewArri container-fluid  d-flex  flex-column " id="New-Arrivals">
+        <div class=" flex-column text-center d-flex justify-content-center align-items-center">
+            <h2 class="fw-bold ">New Arrivals</h2>
+            <p class=" w-75">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna
+                aliqua. Quis
+                ipsum suspendisse ultrices gravida.
+            </p>
+        </div>
+        <div class="hold-figs d-flex justify-content-evenly container-fluid flex-wrap" id="New-Arrivals">
+            <div class="img-0">
+                <figure>
+                    <div class="">
+                        <img src="/imgs/Wahtchs/popular1.png" alt="">
+                    </div>
+                    <div class="behind w-100">
+                        <figcaption class="  text-center">
+                            <p>Thermo Ball Etip</p>
+                            <p>Gloves</p>
+                        </figcaption>
+                        <p class="af">
+                            <a href="#Home">Add To Cart</a>
+                        </p>
+                    </div>
+
+                </figure>
+                <div class="mo bg-light fs-5 text-center">$45.743</div>
+            </div>
+            <div class="img-0 ">
+                <figure>
+                    <div class="">
+                        <img src="/imgs/Wahtchs/popular2.png" alt="">
+                    </div>
+                    <div class="behind w-100">
+                        <figcaption class=" text-center">
+                            <p>Thermo Ball Etip</p>
+                            <p>Gloves</p>
+                        </figcaption>
+                        <p class="af">
+                            <a href="#Home">Add To Cart</a>
+                        </p>
+                    </div>
+                </figure>
+                <div class="mo bg-light fs-5 text-center">$45.743</div>
+            </div>
+            <div class="img-0 ">
+                <figure>
+                    <div class="">
+                        <img src="/imgs/Wahtchs/popular3.png" alt="">
+                    </div>
+                    <div class="behind w-100">
+                        <figcaption class="  text-center">
+                            <p>Thermo Ball Etip</p>
+                            <p>Gloves</p>
+                        </figcaption>
+                        <p class="af">
+                            <a href="#Home">Add To Cart</a>
+                        </p>
+                    </div>
+                </figure>
+                <div class="mo bg-light fs-5 text-center">$45.743</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Arrivals -->
+
+
+    <script src="/Script/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sixtyfour Convergence", sans-serif;
+}
+li .nav-link {
+  transition: 0.4s;
+  color: #0892f4;
+  font-size: 1.2rem;
+}
+
+li .nav-link:hover {
+  color: black;
+}
+.main {
+  height: 100vh;
+}
+
+.main .left p {
+  width: 90%;
+  color: darkslategray;
+}
+
+.bola {
+  background-color: #0892f4;
+  border: 1px solid #0892f4;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.bola:hover {
+  transform: scale(1.2);
+}
+
+.bsc {
+  transition: 1s;
+}
+.bsc:hover {
+  transform: scale(1.2);
+}
+.NewPro {
+  margin-bottom: 7em;
+}
+
+.mo {
+  border-radius: 10px;
+  color: red;
+  border: 1px solid whitesmoke;
+}
+
+/* New Arrivals */
+.behind {
+  position: relative;
+}
+.behind::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: red;
+  transition: 0.3s;
+  z-index: -1;
+}
+.behind:hover::before {
+  height: 100%;
+}
+figcaption {
+  font-size: 1.6em;
+}
+figcaption:hover {
+  display: none;
+}
+
+.behind:hover figcaption {
+  display: none;
+}
+.behind p.af a {
+  text-decoration: none;
+  color: white;
+}
+
+.behind:hover p.af a {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2em;
+}
+.behind p.af {
+  display: none;
+}
+.behind:hover p.af {
+  display: flex;
+  justify-content: center;
+  height: 92px;
+}

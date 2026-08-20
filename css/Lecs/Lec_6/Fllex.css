@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  font-size: 1.6em;
+  color: white;
+}
+.main-1 {
+  width: 100%;
+  height: 100vh;
+  background: url(/Image/town.jpg);
+  background-size: 100% 100%;
+}
+.main-1 .top {
+  font-family: cursive;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.main-1 .top .left {
+  padding-left: 4em;
+}
+.main-1 .top .left a {
+  color: white;
+  transition: 0.4s;
+}
+.main-1 .top .left a:hover {
+  color: blue;
+}
+.main-1 .top .right {
+  display: flex;
+  gap: 1.4em;
+  flex-basis: 54%;
+}
+.main-1 .top .right a span {
+  color: blue;
+}
+.main-1 .top .right a {
+  color: white;
+  transition: 0.4s;
+}
+.main-1 .top .right a:hover {
+  color: blue;
+}
+
+/* bottom */
+
+.main-1 .bottom {
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 48%;
+  gap: 1.2em;
+}
+.main-1 .bottom p span {
+  color: blueviolet;
+}
+.main-1 .bottom h1 {
+  font-size: 3em;
+}
+
+/* media @ */
+
+@media screen and (max-width: 768px) {
+  .main-1 .top .right {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1.4em;
+    flex-basis: 20%;
+  }
+  .main-1 .top .left {
+    padding-left: 2em;
+  }
+  .main-1 .bottom {
+    height: 27%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 897px) {
+  .main-1 .top .right {
+    text-align: end;
+    align-items: end;
+    flex-direction: row;
+    display: flex;
+    gap: 1.4em;
+    flex-basis: 75%;
+  }
+  .main-1 .top .left {
+    padding-left: 2em;
+  }
+  .main-1 .bottom {
+    height: 48%;
+  }
+}
+
+@media screen and (min-width: 897px) and (max-width: 1060px) {
+  .main-1 .top .right {
+    text-align: end;
+    align-items: end;
+    flex-direction: row;
+    display: flex;
+    gap: 1.4em;
+    flex-basis: 64%;
+  }
+  .main-1 .bottom {
+    height: 48%;
+  }
+}
+
+/* main-2 */
+
+.main-2 {
+  width: 100%;
+  font-family: sans-serif;
+}
+.main-2 .top {
+  gap: 3em;
+  padding: 3.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-2 .top .left img {
+  padding-left: 1.2em;
+  width: 80%;
+}
+.main-2 .top .right {
+  flex-basis: 50%;
+}
+.main-2 .top .right a {
+  font-size: large;
+  color: dodgerblue;
+  text-decoration: underline;
+  transition: 0.4s;
+}
+.main-2 .top .right a:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+.main-2 .top .right h1 {
+  font-size: 2.6em;
+  font-weight: 500;
+  color: blueviolet;
+}
+.main-2 .top .right p {
+  color: gray;
+  width: 72%;
+  line-height: 1.7em;
+  margin: 1.3em 0;
+}
+.main-2 .top button {
+  color: white;
+  font-size: larger;
+  padding: 0.5em 0.9em;
+  border: 1px solid dodgerblue;
+  border-radius: 0.8em;
+  background-color: dodgerblue;
+  transition: 0.4s;
+}
+.main-2 .top button:hover {
+  background-color: darkblue;
+}
+
+/* bottom */
+.main-2 .bottom {
+  padding: 2em;
+  text-align: center;
+  background: linear-gradient(180deg, #e3987f, #5c648c);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.main-2 .bottom div {
+  width: 28%;
+  flex-direction: column;
+  display: flex;
+  gap: 1em;
+}
+.main-2 .bottom p {
+  width: 99%;
+}
+.main-2 .bottom h1 {
+  font-weight: 500;
+  font-size: 2.4em;
+  color: white;
+}
+.main-2 .bottom a {
+  color: darkblue;
+  transition: 0.4s;
+}
+.main-2 .bottom a:hover {
+  color: dodgerblue;
+}
+
+/* media */
+
+@media screen and (max-width: 920px) {
+  .main-2 .top .left {
+    display: flex;
+    justify-content: center;
+  }
+  .main-2 .top {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .main-2 .top .right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-2 .bottom div {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin: 0.8em;
+    width: 100%;
+  }
+  .main-2 .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-2 .bottom p {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1177px) {
+  .main-2 .top .right p {
+    width: 94%;
+    line-height: 1.5em;
+  }
+}
+
+/* main-3 */
+
+.main-3 {
+  width: 100%;
+  font-family: sans-serif;
+}
+.main-3 .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 1.2em;
+  padding: 3em 0 1em 0;
+}
+.main-3 .top h1 {
+  color: blue;
+  font-size: 2.4em;
+  line-height: 1.6em;
+}
+.main-3 .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 4em 2em;
+}
+.main-3 .bottom img {
+  width: 210px;
+  height: 235px;
+  transition: 0.4s;
+  cursor: pointer;
+  margin: 0.5em;
+}
+.main-3 .bottom img:hover {
+  scale: 1.3;
+}
+
+/* media */
+@media screen and (max-width: 920px) {
+  .main-3 .bottom {
+    flex-wrap: wrap;
+  }
+}
+
+/* main-4 */
+
+.main-4 {
+  font-family: sans-serif;
+  width: 100%;
+  background: url(/Image/last-town.jpg);
+  background-size: 100% 100%;
+}
+.main-4 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-bottom: 3em;
+  color: white;
+}
+.main-4 .top h1 {
+  font-size: 2.4em;
+  padding: 2em 1em 0em 1em;
+}
+.main-4 .top p {
+  width: 87%;
+  margin-left: 2.5em;
+  line-height: 2em;
+}
+
+.main-4 .body {
+  margin: 0 4em;
+}
+.main-4 .top .space {
+  height: 1px;
+  width: 87%;
+  margin-left: 2.5em;
+  background-color: white;
+  position: relative;
+}
+.main-4 .top .space::after {
+  content: " ";
+  position: absolute;
+  height: 7px;
+  width: 20%;
+  background-color: white;
+}
+
+.main-4 .bottom {
+  padding: 2.5em 2.5em 0 2.5em;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-4 .bottom p {
+  font-size: larger;
+  font-weight: 700;
+  padding-bottom: 3.5em;
+}
+.main-4 .bottom .right {
+  padding-right: 4.5em;
+}
+.main-4 .bottom .right input {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 7px;
+  color: white;
+  padding: 0.7em 1.7em;
+  margin-right: 2em;
+}
+::placeholder {
+  opacity: 1;
+  color: white;
+}
+
+.main-4 .bottom .right button {
+  padding: 0.5em 0.7em;
+  font-size: 1em;
+  border: 1px solid white;
+  border-radius: 7px;
+  color: darkblue;
+  cursor: pointer;
+}
+.main-4 .bottom .right button:hover {
+  background-color: rgb(177, 177, 175);
+}
+
+.main-4 .bbottom {
+  padding-bottom: 1.7em;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: end;
+}
+
+.bbottom span {
+  color: dodgerblue;
+}
+
+/* media */
+@media screen and (min-width: 900px) and (max-width: 1209px) {
+  .main-4 .top h1 {
+    padding: 1em 1em 0em 1em;
+
+    .main-4 .bbottom {
+      padding-bottom: 1.7em;
+    }
+  }
+
+  .main-4 .right .mail {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-4 .body {
+    margin: 0;
+  }
+  .main-4 .top {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-4 .top h1 {
+    padding: 1em 1em 0em 1em;
+  }
+  .main-4 .top .space::after {
+    left: 185px;
+    position: absolute;
+    width: 40%;
+  }
+  .main-4 .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-4 .bottom .right {
+    display: flex;
+    gap: 1.6em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1.5em;
+  }
+  .main-4 .bottom .right p {
+    padding-bottom: 1.2em;
+  }
+  .main-4 .right .mail {
+    display: flex;
+  }
+  .main-4 .bbottom {
+    padding-bottom: 1.2em;
+  }
+}

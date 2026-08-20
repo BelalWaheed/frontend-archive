@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/creatAccount.css">
+    <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/all.min.css">
+    <title>Creat New Account</title>
+
+</head>
+
+<body>
+    <div class="main vh-100 bg-body-secondary d-flex justify-content-center align-items-center">
+        <div class="box   d-flex flex-column w-auto bg-light m-auto  ">
+            <div class="top text-center p-3 bg-primary text-light">
+                <h1>Create Account</h1>
+            </div>
+            <form action="created.html" onsubmit="return handlForm()"
+                class="fw-bold p-3 d-flex flex-column align-items-stretch gap-4">
+                <div class="row  d-flex justify-content-center gap-4 text-primary ">
+
+                    <div class=" d-flex flex-column w-50 ">
+                        <label for="name" class="nameLabel text-primary">
+                            Name :
+                        </label>
+                        <input type="text" class="nameInput form-control " name="Name" id="name"
+                            placeholder="Enter your  Name" value="">
+                    </div>
+                </div>
+                <div class="row  d-flex justify-content-center  text-primary">
+                    <div class="left d-flex flex-column w-50 ">
+                        <label for="email" class="emailLabel text-primary">
+                            Email :
+                        </label>
+                        <input type="text" class="emailInput form-control" name="Email" id="email"
+                            placeholder="Enter your Email address ">
+                    </div>
+                    <div class=" d-flex flex-column w-50">
+                        <label for="phone" class="phoneLabel text-primary">
+                            Phone Number :
+                        </label>
+                        <input type="text" class="phoneInput form-control" name="Phone Number" id="phone"
+                            placeholder="Enter your phone number">
+                    </div>
+                </div>
+                <div class="row row d-flex justify-content-center  text-primary">
+                    <div class="left d-flex flex-column w-50 ">
+                        <label for="pass" class="passLabel text-primary">
+                            Password :
+                        </label>
+                        <input type="password" class="passInput form-control" name="pass" id="pass"
+                            placeholder="Enter your password">
+                    </div>
+                    <div class=" d-flex flex-column w-50">
+                        <label for="c-pass" class="confirmPassLabel text-primary">
+                            Confirm Password :
+                        </label>
+                        <input type="password" class="confirmPassInput form-control" name="Confirm Password" id="c-pass"
+                            placeholder="Confirm your password">
+                    </div>
+                </div>
+                <div class="l-row row d-flex justify-content-around  text-primary">
+                    <div class="d-flex flex-column w-50 ">
+                        <div class="">
+                            <label for="Gender" class="genderLabel  cl text-primary ">
+                                Gender :
+                            </label>
+                        </div>
+                        <div class="">
+                            <input type="radio" class="genderInput1" name="Gender" id="Gender">
+                            <label for="Gender" class="cl">
+                                Male
+                            </label>
+                        </div>
+                        <div class="">
+                            <input type="radio" class="genderInput2" name="Gender" id="Genderr">
+                            <label for="Genderr" class="cl">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                    <div class=" d-flex flex-column w-50">
+                        <label for="birth" class="birthdateLabel  text-primary ">
+                            Birthdate :
+                        </label>
+                        <input type="date" class="birthdateInput  " name="Birthdate" id="">
+                    </div>
+                </div>
+                <div class="last d-flex p-2 gap-2">
+                    <button type="submit" class="submitB btn btn-primary">Register</button>
+                    <button type="reset" class=" btn btn-primary">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="Script/bootstrap.bundle.min.js"></script>
+    <script src="Script/creatAccount.js"></script>
+</body>
+
+</html>

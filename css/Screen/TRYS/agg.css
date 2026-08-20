@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: tomato;
+}
+.hed
+{
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    margin: 15px 0 0 0;
+}
+.ff
+{
+    margin: 10px 450px 10px 450px ;
+    background-color: white;
+}
+.ff input
+
+{
+    display: block;
+    border: 1px solid;
+    border-radius: 2px;
+}
+.ff label
+{
+    
+}

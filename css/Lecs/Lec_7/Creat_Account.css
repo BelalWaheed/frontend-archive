@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #f0f2f5;
+}
+.main {
+  font-family: sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .box {
+  display: flex;
+  flex-direction: column;
+  width: 652px;
+  background-color: white;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.main .box .top {
+  text-align: center;
+  padding: 15px;
+  color: white;
+  background-color: #1877f2;
+}
+.box form {
+  font-weight: bold;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.5em;
+}
+.box .row {
+  color: #1877f2;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+.box .row input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"] {
+  color: blue;
+  margin-top: 4px;
+  font-size: 15px;
+  width: 100%;
+  padding: 8px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.box .left {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.box .right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.box .l-row {
+  display: flex;
+  justify-content: space-around;
+}
+.box .left-gender {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  width: 40%;
+}
+.cl {
+  cursor: pointer;
+}
+.main .box form .last {
+  display: flex;
+  padding: 0.5em 1.5em;
+  gap: 0.8em;
+}
+.main .box form .last .button {
+  cursor: pointer;
+  padding: 13px 15px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(7, 87, 234);
+  border-radius: 7px;
+  border: 1px solid rgb(7, 87, 234);
+}
+
+/* media */
+@media screen and (max-width: 666px) {
+  .main .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .box .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .box .row .left {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .box .row .right {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .box .l-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .box .l-row .left-gender {
+    width: 100%;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .box .l-row .right {
+    width: 100%;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}

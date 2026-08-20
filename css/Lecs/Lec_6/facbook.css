@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(226, 244, 255);
+}
+a {
+  text-decoration: none;
+}
+.main {
+  font-family: sans-serif;
+  width: 74%;
+  margin: auto;
+  margin-top: 4.5em;
+  margin-bottom: 2em;
+  display: flex;
+  gap: 4.5em;
+  justify-content: center;
+}
+.main .left {
+  width: 43%;
+}
+.main .left h1 {
+  padding-top: 2em;
+  font-size: 4em;
+  letter-spacing: 2px;
+  margin-bottom: 0.3em;
+  color: rgb(23, 108, 228);
+}
+.main .left p {
+  color: rgb(114, 114, 114);
+  line-height: 1.5;
+  word-spacing: 1.3px;
+  font-size: 1.8em;
+}
+.main .right {
+  padding-top: 4em;
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+}
+.main .right .box {
+  padding: 2.5em;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+.main .right .box input:nth-child(1),
+.main .right .box input:nth-child(2) {
+  font-size: 1em;
+  padding: 0.6em 1.2em;
+  border: 1px solid rgb(154, 154, 156);
+  border-radius: 7px;
+}
+
+.main .right .box button {
+  padding: 0.4em 1em;
+  border: 1px solid rgb(154, 154, 156);
+  border-radius: 7px;
+  font-size: 1em;
+  background-color: rgb(0, 85, 255);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main .right .box button:hover {
+  background-color: darkblue;
+}
+.main .right .box .box-bottom {
+  margin-top: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1em;
+}
+.main .right .box .box-bottom a {
+  color: #1877f2;
+}
+.main .right .box .box-bottom a:hover {
+  text-decoration: underline;
+}
+.main .right .box .box-bottom hr {
+  width: 80%;
+  margin: 0.5em 0;
+}
+.main .right .box .box-bottom button {
+  font-size: 1.1em;
+  padding: 0.7em 1em;
+  background-color: rgb(32, 165, 32);
+}
+.main .right .box .box-bottom button a {
+  color: white;
+}
+.main .right .under-box {
+  width: 100%;
+  font-size: small;
+  margin-top: 1em;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+
+/* media  */
+@media screen and(max-width:999px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}

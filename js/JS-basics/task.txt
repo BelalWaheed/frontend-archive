@@ -1,0 +1,9 @@
+var myH1 = document.getElementById("bh1");
+var fav = prompt("What is your fav club");
+if (fav) {
+  myH1.innerHTML = "your fav club is " + fav;
+} else if (fav == "") {
+  myH1.innerHTML = "you didn't chose a club ";
+} else {
+  myH1.innerHTML = "invalide ";
+}

@@ -1,0 +1,34 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@plugin "daisyui";
+
+@theme {
+  [data-theme="light"] {
+    --color-lightBg: #ffffff;
+    --color-lightDev: #7a9fe7;
+    --color-darkBg: #1b232b;
+    --color-darkDev1: #7a6ad8;
+    --color-darkDev2: #1b2c8b;
+  }
+  [data-theme="dark"] {
+    --color-lightBg: #1b232b;
+    --color-lightDev: #1b2c8b;
+    --color-darkBg: #ffffff;
+    --color-darkDev1: #7a9fe7;
+    --color-darkDev2: #7a6ad8;
+  }
+}
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  @apply bg-lightBg dark:bg-darkBg;
+  min-height: 100vh;
+}
+
+.card {
+  @apply rounded-2xl shadow-xl;
+  transition: all 0.3s ease;
+}

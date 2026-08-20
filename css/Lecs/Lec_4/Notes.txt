@@ -1,0 +1,38 @@
+1-calling an element is more powerfull than class
+
+2-اعمل width to the <p>
+--  
+2- em == 2 * parent value  
+3- rem == 2 * defualt body
+--
+*4-use em & rem insted of px for everything like padding & marrgin, for width:%, vh for height 
+--
+5-background-image:url("/Image/G.jpg");
+    //      -cover;
+    //      -repeat:no-repeat;
+    //      -size: 100% 100% ;
+    //      -position:top-center;
+    //      -attzchment:fixed;
+--
+6-float don't use 
+7-Pseudo: عنصر وهمي بيسهل عليك حاجات كتير
+    ex-  :first-child  , :nth-child(3) , :nth-of-type(3)
+    cursor:pointer;
+    p{
+        transition:1.5s;
+    }
+    p:hover{
+        يعني لما الماوس يجي علي القطعةاللي مكتوب قبل وجددت قيمته هو اللي هيتغير 
+    }
+    p:focus {
+
+    }
+--
+8-transform
+    :translate(1.5em, 2em);   بيحرك
+
+    scale(1.5); 3D بيكبر العنصر
+
+    -rotate(90deg);
+
+    -skew(10deg,53deg); بيمط العنصر 

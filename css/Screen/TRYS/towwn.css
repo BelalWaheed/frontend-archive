@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/Image/town.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+}
+.fon {
+  color: white;
+  font-family: cursive;
+}
+.fon span {
+  font-weight: 600;
+  font-size: 1.45em;
+  top: 0.7em;
+  left: 4.2em;
+  position: absolute;
+  transition: 0.3s;
+}
+.fon span:hover {
+  cursor: pointer;
+  color: #4169e1;
+}
+.nav {
+  font-size: x-large;
+  position: absolute;
+  right: 4em;
+  top: 1em;
+  text-align: center;
+  font-weight: 600;
+}
+#blu {
+  color: #4169e1;
+}
+
+.nav p {
+  display: inline;
+  margin: 0.5em;
+  transition: 0.3s;
+}
+.nav p:hover {
+  cursor: pointer;
+  color: #3353b3;
+}

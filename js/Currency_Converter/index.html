@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Currency_converter.css">
+    <link rel="icon" href="arrow-right-arrow-left-solid.svg">
+</head>
+
+<body class="d-flex justify-content-center align-items-center  min-vh-100">
+    <div class="converter-card m-auto ">
+        <div class="card-header text-center text-white p-3 ">
+            <h2>💰 Currency Converter</h2>
+        </div>
+        <div class="card-body pt-5 p-4">
+            <div class="container mb-5">
+                <div class="mb-5">
+                    <div class="form-floating d-flex gap-2   ">
+                        <div class="form-floating " style="width: 87%;">
+                            <input type="text" class="form-control belInpuit" placeholder="1 by defualt">
+                            <label>Amount "1 by defualt" </label>
+                        </div>
+                        <button class="swap d-flex align-items-center   ">
+                            <img src="arrow-right-arrow-left-solid.svg" alt="button icon" style="width: 30px;">
+                        </button>
+                    </div>
+                </div>
+                <div class="selectGroub mb-5">
+                    <div class="selectDiv mb-5">
+                        <div class="form-floating">
+                            <select class="form-select form_select  from text-center"
+                                aria-label="Floating label select example">
+                            </select>
+                            <label class="label_from">
+                                <img src="https://flagsapi.com/US/shiny/64.png" style="width: 32px;">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="selectDiv mb-5">
+                        <div class="form-floating">
+                            <select class="form-select form_select to text-center"
+                                aria-label="Floating label select example">
+                            </select>
+                            <label class="label_to">
+                                <img src="https://flagsapi.com/US/shiny/64.png" style="width: 32px;">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="w-100 mb-5 d-flex justify-content-center ">
+                        <button class="btn btn-primary w-25 fw-bold convertBtn" type="button">Convert</button>
+                    </div>
+                    <div class="result p-2 ">
+                        <h2 class="text-center ">
+                            hola
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=" JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/Currency_convertor.js"></script>
+</body>
+
+</html>

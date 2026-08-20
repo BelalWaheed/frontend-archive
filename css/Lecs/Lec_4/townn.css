@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(/Image/town.jpg);
+  background-size: 100% 100%;
+}
+.f {
+  font-family: cursive;
+  font-size: 1.4em;
+  position: absolute;
+  left: 4.5em;
+  top: 0.8em;
+  color: white;
+}
+.nav {
+  position: absolute;
+  right: 5em;
+  top: 0.5em;
+  font-size: 1.38em;
+  font-weight: bold;
+  font-family: cursive;
+}
+.nav ul li {
+  display: inline-block;
+  padding: 0.3em;
+}
+.color {
+  color: #4169e1;
+  cursor: pointer;
+}
+.nav-cnter {
+  text-align: center;
+  min-width: 80%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.a1 {
+  font-weight: 500;
+  color: white;
+  font-size: 3.2em;
+}
+li span {
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+}
+li span:hover {
+  color: #4169e1;
+}
+p span {
+  color: #4169e1;
+}
+h1 span {
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+}
+h1 span:hover {
+  cursor: pointer;
+  color: #4169e1;
+  transition: 0.2s;
+}
+.a2 {
+  color: white;
+  margin: 0.6em 0 1.4em 0;
+}
+.main2 {
+  position: relative;
+  height: 96vh;
+  width: 100%;
+}
+
+.img {
+  width: 33%;
+  height: 46vh;
+  background-image: url(/Image/townn.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  position: absolute;
+  top: 3em;
+  left: 7.3em;
+}
+.image-text {
+  color: rgb(133, 136, 134);
+  position: absolute;
+  bottom: 24em;
+  right: 16em;
+  width: 33%;
+}
+.image-text h1 {
+  font-weight: 500;
+  font-size: 2.5em;
+  color: #4169e1;
+  margin: 0 0 1em 0;
+}
+.image-text p {
+  margin-bottom: 1.1em;
+}
+
+span a {
+  text-decoration: underline;
+  color: #4169e1;
+  font-weight: 700;
+  transition: 0.8s;
+}
+span a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.bt {
+  text-align: center;
+  font-size: medium;
+  margin-top: 0.5em;
+  position: absolute;
+  color: white;
+  background-color: #4169e1;
+  border: 2px solid #4169e1;
+  border-radius: 12px;
+  padding: 0.5em 0.8em;
+}
+.bt:hover {
+  background-color: #2f4a9b;
+  cursor: pointer;
+}
+.nav2-bottom {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-size: cover;
+  background-image: url(/Image/town3.jpg);
+  width: 100%;
+  height: 35vh;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.p1 {
+  color: rgb(157, 197, 170);
+  position: absolute;
+  left: 6em;
+  bottom: 4em;
+  text-align: center;
+  width: 27%;
+}
+
+.p2 {
+  color: rgb(157, 197, 170);
+  position: absolute;
+  bottom: 4em;
+  left: 34.7em;
+  text-align: center;
+  width: 27%;
+}
+
+.p3 {
+  color: rgb(157, 197, 170);
+  position: absolute;
+  bottom: 4em;
+  right: 6em;
+  text-align: center;
+  width: 27%;
+}
+.sa h1 {
+  color: white;
+}
+.sa p {
+  margin-top: 0.8em;
+}
+.sa p a {
+  font-size: large;
+  color: #4169e1;
+  padding: 0.5em 1em;
+  transition: 0.8s;
+}
+.sa p a:hover {
+  color: #2f4a9b;
+  cursor: pointer;
+}

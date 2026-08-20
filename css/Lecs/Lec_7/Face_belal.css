@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #f0f2f5;
+}
+.main {
+  font-family: sans-serif;
+  justify-content: space-between;
+  width: 999px;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 1em;
+}
+.main .left {
+  width: 480px;
+  padding-top: 120px;
+}
+.main .left h1 {
+  color: #1877f2;
+  font-size: 3.8em;
+  line-height: 1.7em;
+}
+.main .left h2 {
+  line-height: 1.4em;
+  color: rgb(104, 97, 87);
+  font-size: 1.7em;
+  font-weight: 100;
+}
+.main .right {
+  padding-top: 4em;
+  width: 421px;
+  align-self: center;
+}
+.main .box-continer {
+  display: flex;
+  flex-direction: column;
+  width: 421px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 1em;
+}
+.main .box {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7em;
+}
+.main .box input {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid rgb(143, 138, 130);
+  border-radius: 7px;
+  color: #1877f2;
+}
+.main .box label {
+  color: blue;
+}
+.main .box button {
+  padding: 9px;
+  font-size: 1.1em;
+  color: white;
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: #1877f2;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.main .box button:hover {
+  background-color: darkblue;
+}
+.main .box-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  padding: 4px;
+}
+
+.main .box-bottom a {
+  transition: 0.1s;
+  color: #1877f2;
+}
+.main .box-bottom a:hover {
+  text-decoration: underline;
+}
+.main .box-bottom hr {
+  width: 84%;
+}
+.main .box-bottom button {
+  font-size: 1.05em;
+  padding: 12px 16px;
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: rgb(15, 185, 15);
+  color: white;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.main .box-bottom button:hover {
+  background-color: green;
+}
+.main .box-bottom button a {
+  color: white;
+}
+.main .box-bottom button a:hover {
+  text-decoration: none;
+}
+.main .right .under-box {
+  display: flex;
+  gap: 0.7em;
+  padding: 1.2em;
+  justify-content: center;
+  text-align: center;
+}
+.main .right .under-box a:hover {
+  text-decoration: underline;
+}
+/* media */
+@media screen and (max-width: 1000px) {
+  .main {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+    flex-direction: column;
+  }
+  .main .left {
+    padding-top: 2px;
+    text-align: center;
+  }
+  .main .left h1 {
+    font-size: 4em;
+  }
+  .main .left h2 {
+    font-size: 1.62em;
+  }
+  .main .right {
+    padding-top: 3em;
+  }
+}

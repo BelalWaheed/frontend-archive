@@ -1,0 +1,14 @@
+[
+    {
+        "productName": null ,
+        "productPrice": 100
+    },
+    {
+        "productName": "product 2",
+        "productPrice": 300
+    },
+    {
+        "productName": "product 3",
+        "productPrice": 400
+    }
+]

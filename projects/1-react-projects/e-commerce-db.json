@@ -1,0 +1,152 @@
+[
+  {
+    "id": "1",
+    "title": "Schott NYC Leather Moto Jacket",
+    "price": 850,
+    "description": "Classic heavyweight cowhide leather motorcycle jacket with belt and asymmetrical zipper.",
+    "gender": "men",
+    "category": "jacket",
+    "image": "https://i.ibb.co/bgNJ8P0b/1.webp",
+    "rating": { "rate": 4.8, "count": 120 }
+  },
+  {
+    "id": "2",
+    "title": "H&M Slim Fit Organic Cotton Tee",
+    "price": 12.99,
+    "description": "Soft, slim-fit crew neck t-shirt made from 100% organic cotton.",
+    "gender": "men",
+    "category": "shirt",
+    "image": "https://i.ibb.co/PzrTXv6f/2.avif",
+    "rating": { "rate": 4.5, "count": 340 }
+  },
+  {
+    "id": "3",
+    "title": "Levi's 501 Original Fit Jeans",
+    "price": 69.5,
+    "description": "The original blue jean since 1873. Straight leg with signature button fly.",
+    "gender": "men",
+    "category": "pants",
+    "image": "https://i.ibb.co/VpCbWqTC/3.webp",
+    "rating": { "rate": 4.7, "count": 1500 }
+  },
+  {
+    "id": "4",
+    "title": "Patagonia Better Sweater Fleece",
+    "price": 139,
+    "description": "Warm, polyester knitted fleece jacket with full-zip front.",
+    "gender": "men",
+    "category": "jacket",
+    "image": "https://i.ibb.co/V1PMHCr/4.webp",
+    "rating": { "rate": 4.9, "count": 85 }
+  },
+  {
+    "id": "5",
+    "title": "Ralph Lauren Classic Polo",
+    "price": 98,
+    "description": "Signature pony embroidery on breathable cotton mesh fabric.",
+    "gender": "men",
+    "category": "shirt",
+    "image": "https://i.ibb.co/VY5NmWG8/5.avif",
+    "rating": { "rate": 4.6, "count": 210 }
+  },
+  {
+    "id": "6",
+    "title": "Hugo Boss Wool Suit Jacket",
+    "price": 495,
+    "description": "Sharp tailoring meets modern comfort. Ideal for business wear.",
+    "gender": "men",
+    "category": "jacket",
+    "image": "https://i.ibb.co/mFh7h4Fn/6.jpg",
+    "rating": { "rate": 4.8, "count": 65 }
+  },
+  {
+    "id": "7",
+    "title": "Nike Club Fleece Hoodie",
+    "price": 60,
+    "description": "Classic comfort meets soft fleece. Ribbed cuffs and hem.",
+    "gender": "men",
+    "category": "shirt",
+    "image": "https://i.ibb.co/6JWFd4W6/7.webp",
+    "rating": { "rate": 4.7, "count": 1020 }
+  },
+  {
+    "id": "8",
+    "title": "Timberland 6-Inch Premium Boot",
+    "price": 198,
+    "description": "Waterproof leather boots with padded collars and rugged lugs.",
+    "gender": "men",
+    "category": "shoes",
+    "image": "https://i.ibb.co/HDj23wFr/8.webp",
+    "rating": { "rate": 4.8, "count": 450 }
+  },
+  {
+    "id": "9",
+    "title": "Calvin Klein Non-Iron Dress Shirt",
+    "price": 55,
+    "description": "Slim fit dress shirt featuring a spread collar and adjustable cuffs.",
+    "gender": "men",
+    "category": "shirt",
+    "image": "https://i.ibb.co/Cp30wF9P/9.jpg",
+    "rating": { "rate": 4.4, "count": 180 }
+  },
+  {
+    "id": "10",
+    "title": "The North Face Nuptse Jacket",
+    "price": 320,
+    "description": "Boxy puffer jacket featuring original shiny ripstop fabric.",
+    "gender": "men",
+    "category": "jacket",
+    "image": "https://i.ibb.co/3mfKyLQD/10.webp",
+    "rating": { "rate": 4.9, "count": 310 }
+  },
+  {
+    "id": "11",
+    "title": "Adidas Essentials Track Pants",
+    "price": 45,
+    "description": "Tapered leg pants with the classic 3-Stripes down the side.",
+    "gender": "men",
+    "category": "pants",
+    "image": "https://i.ibb.co/KcFQdY6J/11.webp",
+    "rating": { "rate": 4.5, "count": 280 }
+  },
+  {
+    "id": "12",
+    "title": "Zara Linen Summer Shirt",
+    "price": 39.9,
+    "description": "Lightweight linen shirt in beige. Relaxed fit with mandarin collar.",
+    "gender": "men",
+    "category": "shirt",
+    "image": "https://i.ibb.co/4wV5bSYt/12.jpg",
+    "rating": { "rate": 4.3, "count": 110 }
+  },
+  {
+    "id": "13",
+    "title": "Vans Old Skool Sneakers",
+    "price": 70,
+    "description": "Low top lace-up featuring sturdy canvas and suede uppers.",
+    "gender": "men",
+    "category": "shoes",
+    "image": "https://i.ibb.co/Yzt2b7J/13.webp",
+    "rating": { "rate": 4.8, "count": 2200 }
+  },
+  {
+    "id": "14",
+    "title": "Carhartt WIP Michigan Coat",
+    "price": 185,
+    "description": "Unlined chore coat made from robust cotton canvas.",
+    "gender": "men",
+    "category": "jacket",
+    "image": "https://i.ibb.co/5gsFZ02K/14.webp",
+    "rating": { "rate": 4.7, "count": 90 }
+  },
+  {
+    "id": "15",
+    "title": "Tommy Hilfiger Cable Knit Sweater",
+    "price": 89.5,
+    "description": "Classic fit crew neck sweater with traditional cable knit pattern.",
+    "gender": "men",
+    "category": "shirt",
+    "image": "https://i.ibb.co/zT2jZ1sM/15.webp",
+    "rating": { "rate": 4.6, "count": 140 }
+  }
+]

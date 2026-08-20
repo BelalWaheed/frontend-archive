@@ -1,0 +1,43 @@
+Array Built-in Methods: 
+(7. join(): Joins all elements of an array into a string.)
+(18. toString(): Converts an array to a string and returns the result. )
+1. concat(): Used to merge two or more arrays. 
+6. indexOf(): Searches the array for an element and returns its position. 
+13. reverse(): Reverses the order of the elements in an array. 
+16. sort(): Sorts the elements of an array. 
+10. pop(): Removes the last element of an array and returns that element. 
+11. push(): Add to the last element of an array and returns that element.
+14. shift(): Removes the first element of an array and returns that element. 
+14. unshift(): Add to the first element of an array and returns that element. 
+•  slice() - Extracts a part of a string and returns a new string
+-----------------------------------------------
+String Built-in Methods
+(•  split() - convert a string into an array )
+•  charAt() - Returns the character at a specified index
+•  charCodeAt() - Returns the Unicode of the character at a specified index
+•  concat() - Joins two or more strings
+•  endsWith() - Checks if a string ends with specified characters
+•  startsWith() - Checks whether a string begins with specified characters
+•  toLowerCase() - Converts a string to lowercase letters
+•  toUpperCase() - Converts a string to uppercase letters
+•  includes() - Checks whether a string contains specified characters
+•  indexOf() - Returns the position of the first found occurrence of a specified value
+•  lastIndexOf() - Returns the position of the last found occurrence of a specified value
+•  match() - Searches a string for a match against a regular expression and returns an array with the results
+•  repeat() - Returns a new string with a specified number of copies of an existing string
+•  replace() - Searches a string for a specified value or regular expression and returns a new string where the specified values are replaced
+•  search() - Searches a string for a specified value and returns the position of the match
+•  slice() - Extracts a part of a string and returns a new string
+•  trim() - Removes whitespace from both ends of a string
+--------------------------------------------------------------
+Number Built in methods :
+1- isNaN() check if number or not and returns true or false
+2- parseInt() convert string to number
+--------------------------------------------------------------------
+Math:
+
+round()
+ceil()
+floor()
+random()
+eval()

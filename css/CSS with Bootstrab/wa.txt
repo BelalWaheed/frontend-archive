@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahtches</title>
+    <link rel="stylesheet" href="/Style/bootstrap.min.css">
+    <link rel="stylesheet" href="/Style/all.min.css">
+    <link rel="stylesheet" href="/Style/bs-1.css">
+</head>
+
+<body>
+    <!-- Nav -->
+
+    <ul class="nav justify-content-center pt-3  ">
+        <li class="nav-item">
+            <a class="nav-link active fw-medium" aria-current="page" href="#Home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fw-medium" href="#Products">Products</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fw-medium" href="#New-Arrivals">New-Arrivals</a>
+        </li>
+        <!-- Nav -->
+    </ul>
+
+    <div class="main d-md-flex  p-5 container" id="Home">
+        <div class="left w-50  align-content-center">
+            <h1 class="fw-bold mb-4">Watch of Choice</h1>
+            <p class="lh-lg ">Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea
+                commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <button type="button" class="btn"><a>SHOW WAHTCHES</a></button>
+        </div>
+        <div class="img w-50 align-content-center">
+            <img src="/imgs/Wahtchs/choce_watch1.png" width="90%" alt="">
+        </div>
+
+    </div>
+
+
+
+    <script src="/Script/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+////////////////smalllllllllllllllllllllllllll
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahtches</title>
+    <link rel="stylesheet" href="/Style/bootstrap.min.css">
+    <link rel="stylesheet" href="/Style/all.min.css">
+    <link rel="stylesheet" href="/Style/bs-1.css">
+</head>
+
+<body>
+    <!-- Nav -->
+
+    <ul class="nav justify-content-center pt-3  ">
+        <li class="nav-item">
+            <a class="nav-link active fw-medium" aria-current="page" href="#Home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fw-medium" href="#Products">Products</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fw-medium" href="#New-Arrivals">New-Arrivals</a>
+        </li>
+        <!-- Nav -->
+    </ul>
+
+    <div class="main d-md-flex flex-md-column  p-5 container" id="Home">
+        <div class="left w-100  text-center align-content-center">
+            <h1 class="fw-bold mb-4">Watch of Choice</h1>
+            <p class="lh-lg">Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <!-- <button type="button" class=" night-changes btn "><a>SHOW WAHTCHES</a></button> -->
+            <button class="bshow text-light ">
+                <a>SHOW WAHTCHES</a>
+            </button>
+            </button>
+        </div>
+        <div class="img w-100 align-content-center">
+            <img src="/imgs/Wahtchs/choce_watch1.png" width="90%" alt="">
+        </div>
+
+    </div>
+
+
+
+    <script src="/Script/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+// Import required modules and components
+import React, { useEffect, useState, useRef } from "react";
+import { Film, LogOut } from "lucide-react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { Search } from "./SearchBar";
+import { useDispatch, useSelector } from "react-redux";
+import Swal from "sweetalert2";
+import { SiThemoviedatabase } from "react-icons/si";
+
+import { RequestSingIn } from "../../redux/AuthSlices/RequestSingIn";
+import { AccountInfo, signOut } from "../../redux/AuthSlices/AccountInfo";
+import { RequestSingOut } from "../../redux/AuthSlices/RequestSignOut";
+
+// Navigation links
+const navLinks = [
+    // { to: "/", label: "Home" },
+    { to: "/movies", label: "Movies" },
+    { to: "/series", label: "Series" }
+];
+
+export default function Header() {
+    // Hooks and Redux setup
+    const location = useLocation();
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
+
+    // Redux state
+    const { isLogged, AccountInfoDetails, AccountInfoDetailsLoading } =
+        useSelector(state => state.AccountInfoSliceReducer);
+    const { RequestSingInDetails } = useSelector(
+        state => state.SignInTokenReducer
+    );
+
+    // Dropdown state and ref
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const dropdownRef = useRef(null);
+
+    // Sign out alert
+    const signOutAlert = () => {
+        Swal.fire({
+            theme: "dark",
+            title: "Are you sure?",
+            text: "You will sign out now!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#d33",
+            cancelButtonColor: "#3085d6",
+            confirmButtonText: "Sign out"
+        }).then(result => {
+            if (result.isConfirmed) {
+                dispatch(RequestSingOut());
+                dispatch(signOut());
+                Swal.fire({
+                    theme: "dark",
+                    title: "Done!",
+                    text: "Sign out complete",
+                    icon: "success"
+                });
+            }
+        });
+    };
+
+    // Handle access denied
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        const denied = params.get("denied");
+        if (denied === "true") {
+            Swal.fire({
+                icon: "error",
+                theme: "dark",
+                title: "Access Denied",
+                text: "You denied the authorization request. Please sign in again."
+            }).then(() => navigate("/"));
+            localStorage.removeItem("token");
+        }
+    }, [navigate]);
+
+    // Redirect to TMDB auth when token is ready
+    useEffect(() => {
+        if (RequestSingInDetails?.success) {
+            window.location.href = `https://www.themoviedb.org/authenticate/${RequestSingInDetails.request_token}?redirect_to=https://moviqq.vercel.app/`;
+            // window.location.href = `https://www.themoviedb.org/authenticate/${RequestSingInDetails.request_token}?redirect_to=http://localhost:5173/`;
+        }
+    }, [RequestSingInDetails]);
+
+    // Fetch account info
+    useEffect(() => {
+        dispatch(AccountInfo());
+    }, []);
+
+    // Close dropdown when clicking outside
+    useEffect(() => {
+        const handleClickOutside = e => {
+            if (
+                dropdownRef.current &&
+                !dropdownRef.current.contains(e.target)
+            ) {
+                setDropdownOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () =>
+            document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
+
+    // Check if a link is active
+    const isActive = path => {
+        if (path === "/") return location.pathname === "/";
+        if (path === "/movies") return location.pathname.startsWith("/movie");
+        if (path === "/series") return location.pathname.startsWith("/series");
+        return location.pathname.startsWith(path);
+    };
+
+    useEffect(() => {
+        if (!isLogged) {
+            localStorage.removeItem("token");
+        }
+    }, []);
+
+    return (
+        // Header wrapper
+        <header className="bg-background-primary/95 backdrop-blur-md border-background -elevated/50 sticky top-0 z-50 shadow-lg">
+            <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2">
+                <div className="flex items-center justify-between h-14 md:h-16 gap-2">
+                    {/* Left: Logo */}
+                    <Link to="/" className="flex items-center gap-2 group flex-shrink-0">
+                        <motion.div
+                            whileHover={{ rotate: 6, scale: 1.03 }}
+                            transition={{ duration: 0.24 }}
+                            className="relative">
+                            <Film className="w-5 md:w-7 text-accent-primary" />
+                            <motion.div
+                                animate={{
+                                    scale: [1, 1.08, 1],
+                                    opacity: [0.5, 0.9, 0.5]
+                                }}
+                                transition={{
+                                    duration: 2.8,
+                                    repeat: Infinity
+                                }}
+                                className="absolute inset-0 bg-accent-primary rounded-full blur-md opacity-40"
+                            />
+                        </motion.div>
+
+                        <span className="text-lg md:text-2xl font-black bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary bg-clip-text text-transparent">
+                            Moviq
+                        </span>
+                    </Link>
+
+                    {/* Center: Navigation - visible on all screens */}
+                    <nav
+                        className="flex items-center gap-2 md:gap-3"
+                        aria-label="Primary">
+                        {navLinks.map((l, idx) => (
+                            <motion.div
+                                key={l.to}
+                                initial={{ opacity: 0, y: -6 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: idx * 0.08 }}>
+                                <Link
+                                    to={l.to}
+                                    className={`whitespace-nowrap px-4 md:px-5 py-2 md:py-2.5 rounded-xl text-sm md:text-base font-semibold transition-all ${
+                                        isActive(l.to)
+                                            ? "text-accent-primary bg-accent-primary/10 border border-accent-primary/20"
+                                            : "text-text-secondary hover:text-text-primary hover:bg-background-elevated"
+                                    }`}>
+                                    {l.label}
+                                </Link>
+                            </motion.div>
+                        ))}
+                    </nav>
+
+                    {/* Right side elements */}
+                    <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
+                        {/* Search bar - icon on mobile, full on desktop */}
+                        <div className="hidden md:block">
+                            <Search />
+                        </div>
+                        <div className="md:hidden">
+                            <Search iconOnly />
+                        </div>
+
+                        {/* TMDB connect button or loading */}
+                        {AccountInfoDetailsLoading ? (
+                            // Loading State
+                            <div className="flex items-center gap-2 text-sm text-text-secondary">
+                                <span className="w-4 h-4 border-2 border-t-transparent border-white/70 rounded-full animate-spin"></span>
+                                <span className="hidden md:inline">Loading...</span>
+                            </div>
+                        ) : (
+                            !isLogged && (
+                                // TMDB Button
+                                <motion.button
+                                    onClick={() => {
+                                        dispatch(RequestSingIn());
+                                        navigate("/");
+                                    }}
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.97 }}
+                                    className="flex items-center gap-2 bg-background-muted/80 text-white text-xs font-semibold px-2 py-1.5 md:px-4 md:py-2 rounded-md shadow-md hover:bg-[#009fc9] transition-all">
+                                    Login
+                                </motion.button>
+                            )
+                        )}
+
+                        {/* User dropdown */}
+                        {isLogged && (
+                            <div className="relative" ref={dropdownRef}>
+                                <motion.div
+                                    className="flex items-center gap-2 cursor-pointer"
+                                    onClick={() =>
+                                        setDropdownOpen(prev => !prev)
+                                    }
+                                    whileHover={{ scale: 1.05 }}>
+                                    <motion.img
+                                        src={
+                                            AccountInfoDetails?.avatar?.tmdb
+                                                ?.avatar_path
+                                                ? `https://image.tmdb.org/t/p/w45${AccountInfoDetails.avatar.tmdb.avatar_path}`
+                                                : `https://www.gravatar.com/avatar/${AccountInfoDetails?.avatar?.gravatar?.hash}?d=mp`
+                                        }
+                                        alt="avatar"
+                                        className="w-8 h-8 md:w-9 md:h-9 rounded-full border border-accent-primary/40"
+                                    />
+                                    <span className="hidden md:inline text-text-primary font-medium text-sm">
+                                        {AccountInfoDetails?.username}
+                                    </span>
+                                </motion.div>
+
+                                {/* Dropdown menu */}
+                                <AnimatePresence>
+                                    {dropdownOpen && (
+                                        <motion.div
+                                            initial={{
+                                                opacity: 0,
+                                                scale: 0.95,
+                                                y: -5
+                                            }}
+                                            animate={{
+                                                opacity: 1,
+                                                scale: 1,
+                                                y: 0
+                                            }}
+                                            exit={{
+                                                opacity: 0,
+                                                scale: 0.95,
+                                                y: -5
+                                            }}
+                                            transition={{ duration: 0.15 }}
+                                            className="absolute right-0 mt-2 w-44 bg-background-elevated rounded-lg shadow-lg border border-accent-primary/20 p-1 z-50">
+                                            {/* Profile Link */}
+                                            <Link
+                                                to="/profile"
+                                                onClick={() => setDropdownOpen(false)}
+                                                className="w-full flex items-center gap-2 px-3 py-2 text-sm text-text-primary hover:bg-accent-primary/10 rounded-md transition">
+                                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                                </svg>
+                                                My Profile
+                                            </Link>
+                                            
+                                            {/* Divider */}
+                                            <div className="border-t border-gray-700 my-1" />
+                                            
+                                            {/* Sign Out */}
+                                            <button
+                                                onClick={() => {
+                                                    setDropdownOpen(false);
+                                                    signOutAlert();
+                                                }}
+                                                className="w-full flex items-center gap-2 px-3 py-2 text-sm text-red-400 hover:bg-red-500/10 rounded-md transition">
+                                                <LogOut size={16} />
+                                                Sign out
+                                            </button>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </div>
+        </header>
+    );
+}

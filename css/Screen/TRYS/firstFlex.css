@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  font-size: 1.4em;
+  color: white;
+}
+.main-1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/Image/town.jpg);
+  background-size: 100% 100%;
+}
+.main-1 .top {
+  font-family: cursive;
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+.main-1 .top a {
+  transition: 0.5s;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.main-1 .top a:hover {
+  color: rgb(18, 18, 99);
+}
+.main-1 .top .left a {
+  padding-left: 2em;
+}
+.main-1 .top .right {
+  display: flex;
+  gap: 2em;
+  flex-basis: 45%;
+  flex-direction: row;
+}
+.main-1 .top .right span {
+  color: blue;
+}
+.main-1 .bottom h1 {
+  font-size: 3em;
+}
+.main-1 .bottom {
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 47%;
+  gap: 1em;
+}
+.main-1 .bottom span {
+  color: blue;
+}
+@media screen and (max-width: 767px) {
+  .main-1 .top .right {
+    display: flex;
+    gap: 1.4em;
+    flex-basis: 15%;
+    flex-direction: column;
+    text-align: end;
+  }
+  .main-1 .bottom {
+    height: 26%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1272px) {
+  .main-1 .top .right {
+    text-align: end;
+
+    flex-basis: 60%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 999px) {
+  .main-1 .top .right {
+    text-align: end;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    flex-basis: 15%;
+  }
+  .main-1 .bottom {
+    height: 23%;
+  }
+}
+
+/* main-2 */
+
+.main-2 .top {
+  padding: 4em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-2 .top .right {
+  flex-basis: 54%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.main-2 .top .right p a {
+  text-decoration: underline;
+  color: blue;
+  transition: 0.3s;
+}
+.main-2 .top .right p a:hover {
+  color: rgb(224, 33, 33);
+}
+.main-2 .top .right p {
+  width: 60%;
+  color: gray;
+  font-size: large;
+}
+.main-2 .top .right h1 {
+  color: blue;
+  font-size: 2.6em;
+}
+.main-2 .top .right button {
+  padding: 0.8em 1.1em;
+  border: 1px solid black;
+  color: white;
+  background-color: rgb(42, 98, 226);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-2 .top .right button:hover {
+  background-color: rgb(13, 38, 97);
+}
+
+.main-2 .bottom {
+  background: linear-gradient(180deg, #e3987f, #5c648c);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: sans-serif;
+}
+.main-2 .bottom div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  gap: 1.2em;
+  padding: 3.5em;
+}
+.main-2 .bottom div h1 {
+  color: white;
+}
+.main-2 .bottom div a {
+  color: blue;
+  transform: 0.3s;
+}
+.main-2 .bottom div a:hover {
+  color: rgb(8, 8, 118);
+}
+.main-2 .bottom div p {
+  line-height: 1.2em;
+  text-align: center;
+}
+
+/* main-3 */
+.main-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+.main-3 .top {
+  display: flex;
+  gap: 1.2em;
+  text-align: center;
+  padding: 3em;
+  flex-direction: column;
+}
+.main-3 .top h1 {
+  font-size: 2.4em;
+  color: blue;
+}
+.main-3 .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}

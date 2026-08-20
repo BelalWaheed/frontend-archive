@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.f{
+    color: rgb(78, 167, 211);
+}
+body{
+    background: cornsilk;
+    margin: auto;
+    font-size: 25px;
+    
+}
+.hexa{
+    color: rgb(201, 16, 207);
+}
+
+
+.ba
+{
+    font-size: larger;
+
+}
+.fi
+{
+    float: inline-end;
+}

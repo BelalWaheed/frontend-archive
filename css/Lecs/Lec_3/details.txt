@@ -1,0 +1,49 @@
+اولا حلل عناصر html
+
+
+
+اي بلوك تتديلة نسبة بتكون من ابوه 
+ex:
+<body الاب>
+    <div الابن>
+
+    </div>
+</body>
+
+
+1-Font family
+2-Root: تشفير اسم و كود اللون
+:Root{
+    --belal:blue;
+}
+ex:
+h1
+{
+    color: var(--belal);
+}.
+3-calc();
+
+4- !important
+5-diplay non
+
+6-التحريك 
+    *Position (absolute and relative)   responsive 0% .
+    *float (no center)  responsive 10% .
+    *flex (thinking)    responsive 99% .
+    *grid whith bootstrap responsive 100%
+    
+
+@ position
+in the father put ( position:relative )
+on the element that you want to move put ( position:absolute )
+in the child :
+left 111px;
+top 51px;
+buttom 0px;
+
+7-overflow hidden عند خروج الابن من الاب يختفي
+    scroll
+    auto
+    ****** overflow-x :hidden 
+
+8-z-index لوضع عنصر فوق عنصر ب الاكبر  

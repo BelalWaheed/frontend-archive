@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+.box .row input[type="text"],
+input[type="password"],
+input[type="date"] {
+  color: blue;
+  margin-top: 4px;
+  font-size: 15px;
+  width: 100%;
+  padding: 8px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cl {
+  cursor: pointer;
+}

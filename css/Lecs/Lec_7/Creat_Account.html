@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Lec_7/Creat_Account.css">
+    <link rel="icon" href="/Image/profile.png">
+    <title>Creat New Account</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="top">
+                <h1>Create Account</h1>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="left">
+                        <label for="f-name">
+                            First Name :
+                        </label>
+                        <input type="text" name="f-name" id="f-name" placeholder="Enter your first name">
+                    </div>
+                    <div class="right">
+                        <label for="l-name">
+                            Last Name :
+                        </label>
+                        <input type="text" name="l-name" id="l-name" placeholder="Enter your last name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="email">
+                            Email :
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email address ">
+                    </div>
+                    <div class="right">
+                        <label for="phon">
+                            Phone Number :
+                        </label>
+                        <input type="number" name="Phone Number" id="phon" placeholder="Enter your phone number">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="pass">
+                            Password :
+                        </label>
+                        <input type="password" name="pass" id="pass" placeholder="Enter your password" minlength="6"
+                            maxlength="17">
+                    </div>
+                    <div class="right">
+                        <label for="c-pass">
+                            Confirm Password :
+                        </label>
+                        <input type="password" name="Confirm Password" id="c-pass" placeholder="Confirm your password"
+                            minlength="6" maxlength="17">
+                    </div>
+                </div>
+                <div class="l-row">
+                    <div class="left-gender">
+                        <div class="">
+                            <label for="Gender" class="cl" style="color: #1877f2;">
+                                Gender :
+                            </label>
+                        </div>
+                        <div class="">
+                            <input type="radio" name="Gender" id="Gender">
+                            <label for="Gender" class="cl">
+                                Male
+                            </label>
+                        </div>
+                        <div class="">
+                            <input type="radio" name="Gender" id="Genderr">
+                            <label for="Genderr" class="cl">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <label for="birth" style="color: #1877f2;">
+                            Birthdate :
+                        </label>
+                        <input type="date" name="Birthdate" id="">
+                    </div>
+                </div>
+                <div class="last">
+                    <input type="reset" name="" id="" class="button">
+                    <input type="submit" value="Regester" class="button">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

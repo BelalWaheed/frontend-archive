@@ -1,0 +1,50 @@
+
+ul
+{
+    background-color: gray;
+    font-size: 21px;
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+
+}
+li
+{
+    display: inline-block;
+    margin: 20px;
+
+}
+.bb
+{
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    font-size: 20px;
+    padding: 50px;
+    text-align: center;
+    font-weight: 900;
+    text-transform: capitalize;
+    display: inline-block;  
+}
+.a
+.bol
+{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(117, 138, 234);
+    border-radius: 50%;
+    text-align: center;
+    padding: 150px;
+    font-size: 30px;
+    display: inline-block;
+
+}   
+.cc
+{
+    border: solid;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: black    ;
+}

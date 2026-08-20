@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: cursive;
+  background-size: 100%;
+  background-image: url(/Image/townn.jpg);
+}
+.main {
+  background-image: url(/Image/town.png);
+}
+.nav {
+  position: absolute;
+  right: 37px;
+  top: 9px;
+}
+a {
+  text-decoration: none;
+}
+#a1 {
+  position: absolute;
+  left: 40px;
+  top: 12px;
+}
+.pp {
+  display: inline;
+}

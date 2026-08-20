@@ -1,0 +1,8 @@
+.bola img {
+  width: 55%;
+  display: flex;
+  align-self: center;
+}
+.bola {
+  display: none;
+}
